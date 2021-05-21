@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"><Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Display Toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/RG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                tools:layout_editor_absoluteX="110dp"
+                tools:layout_editor_absoluteY="320dp" />
+
+            <RadioButton
+                android:id="@+id/Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                tools:layout_editor_absoluteX="99dp"
+                tools:layout_editor_absoluteY="206dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:layout_constraintTop_toBottomOf="@id/RG" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:text="IPhone"
+            app:layout_constraintEnd_toEndOf="@+id/button9"
+            tools:layout_editor_absoluteY="309dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="JBL Earphones"
+            app:layout_constraintStart_toStartOf="@+id/checkBox2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gaming Laptop"
+            app:layout_constraintStart_toStartOf="@+id/checkBox2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="460dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
